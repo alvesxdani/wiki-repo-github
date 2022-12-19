@@ -1,9 +1,9 @@
 import { InputContainer } from "./style";
 
-function Input() {
+function Input({value, onChange}) {
   return (
     <InputContainer>
-      <input placeholder="Digite aqui"/>
+      <input placeholder="Digite aqui" value={value} onChange={onChange}/>
     </InputContainer>
   )
 }
